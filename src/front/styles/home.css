@@ -1,7 +1,140 @@
-/*
-    home.css: This website contains selectors only used in home.css
+body {
+    background-color: #000000;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+.container-signUp {
+    display: flex;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+}
+
+.left {
+    background-color: #fff;
+    width: 100%;
+}
+
+.title-l {
+    color: #000000;
+    margin-top: 50px;
+}
+
+.right {
+    background-color: #34445b;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-r {
+    width: 80%;
+    margin: auto;
+}
+
+.title-r {
+    color: #6fe1cb;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    border-bottom: solid #57697b 2px;
+}
+
+.inputs {
+    border: none;
+}
+
+.labels {
+    color: #6fe1cb;
+}
+
+.inputs::placeholder {
+    color: #1daf88;
+}
+
+.singup {
+    background-color: #1daf88;
+}
+
+.singup:hover {
+    background-color: #1daf88;
+    box-shadow: 0px 0px 10px #1daf88;
+}
+
+.butons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #34445b;
+    margin-top: 30px;
+
+}
+
+.jumbotron h2 {
+    font-size: xx-large;
+    color: #1daf88;
+}
+
+.cont-off {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.butons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.right-log {
+    margin-top: 30px;
+    background-color: #34445b;
+    color: #1daf88;
+    padding: 20px;
+
+}
+
+.right-log h2 {
+    text-align: center;
+}
+
+.dark-bu:hover {
+    box-shadow: 0px 0px 10px #000;
+
+}
+
+.logo {
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-button {
+    margin-right: 20px;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Puedes ajustar el tamaño según lo necesites */
+  }
