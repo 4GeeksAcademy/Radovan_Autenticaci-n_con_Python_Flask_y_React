@@ -1,7 +1,7 @@
 import React, { useContext, useState, } from "react";
 import { Context } from "../store/appContext";
 import { Link, useNavigate } from "react-router-dom";
-import Swal from 'sweetalert2'; // Importa SweetAlert
+import Swal from 'sweetalert2'; 
 import 'sweetalert2/dist/sweetalert2.min.css';
 import "../../styles/home.css";
 

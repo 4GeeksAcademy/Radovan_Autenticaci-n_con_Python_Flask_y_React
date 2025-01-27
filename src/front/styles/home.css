@@ -31,7 +31,7 @@ body {
 }
 
 .title-r {
-    color: #6fe1cb;
+    color: #baa584;
     text-align: center;
     padding: 10px;
     margin: 10px 0px;
@@ -43,20 +43,20 @@ body {
 }
 
 .labels {
-    color: #6fe1cb;
+    color: #baa584;
 }
 
 .inputs::placeholder {
-    color: #1daf88;
+    color: #baa584;
 }
 
 .singup {
-    background-color: #1daf88;
+    background-color:#baa584;
 }
 
 .singup:hover {
-    background-color: #1daf88;
-    box-shadow: 0px 0px 10px #1daf88;
+    background-color: #baa584;
+    box-shadow: 0px 0px 10px #baa584;
 }
 
 .butons {
@@ -83,7 +83,7 @@ body {
 
 .jumbotron h2 {
     font-size: xx-large;
-    color: #1daf88;
+    color: #baa584;
 }
 
 .cont-off {
@@ -102,7 +102,7 @@ body {
 .right-log {
     margin-top: 30px;
     background-color: #34445b;
-    color: #1daf88;
+    color: #baa584;
     padding: 20px;
 
 }
@@ -116,11 +116,6 @@ body {
 
 }
 
-.logo {
-    width: 70px;
-    border-radius: 50%;
-    margin-left: 20px;
-}
 
 .container-nav {
     display: flex;

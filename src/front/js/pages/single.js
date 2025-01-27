@@ -27,7 +27,7 @@ export const Single = props => {
 				<>
 
 					<div className="cont-off">
-						<h2>Logueate para ver mas opciones de contenido</h2>
+						<h2>Crea una cuenta para accesar</h2>
 					</div>
 
 				</>
