@@ -25,7 +25,7 @@ export const Demo = () => {
 
 			if (result.access_token) {
 				localStorage.setItem("token", result.access_token);
-				console.log("Usuario logueado:", result.fullName);
+				console.log("Usuario logueado:", result.user.full_name);
 				actions.privateRoute();
 				navigate("/");
 			}

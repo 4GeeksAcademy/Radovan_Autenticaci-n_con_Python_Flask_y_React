@@ -28,16 +28,16 @@ def create_one_user():
         for field in required_fields:
             if field not in body or not body[field]:
                 return jsonify({"error": f"El campo '{field}' es requerido y no puede estar vacío"}), 400
-            
+
         raw_password = body.get('password')
         password_hash = bcrypt.generate_password_hash(raw_password).decode('utf-8')
-  
+
         new_user = User(
             full_name=body.get("fullName"),
             email=body.get("email"),
             password=password_hash,
             user_name=body.get("userName"),
-          
+
         )
 
         db.session.add(new_user)
@@ -49,7 +49,7 @@ def create_one_user():
         current_app.logger.error(f"Error al crear usuario: {str(e)}")
 
         return jsonify({"error": "Ocurrió un error al procesar la solicitud"}), 500
-    
+
 @api.route("/login", methods=['POST'])
 def login():
     try:
@@ -61,32 +61,38 @@ def login():
 
         email = data.get('email')
         password = data.get('password')
-        
+
         user = User.query.filter_by(email=email).first()
 
         if not user:
             return jsonify({"error": "usuario no encontrado"}), 400
-        
+
         if not bcrypt.check_password_hash(user.password, password):
             return jsonify({"error": "contraseña incorrecta"}), 401
-        
-        access_token = create_access_token(identity=user.id)
+
+        access_token = create_access_token(identity=str(user.id))
 
         return jsonify({"access_token": access_token, "user": user.serialize()}), 200
-    
+
     except Exception as e:
         print(f"error en la ruta /login: {str(e)}" )
         return jsonify({"error": f"ocurrio un error al procesar la solicitud: {str(e)}"}), 500
-    
-@api.route('private', methods=['GET'])
+
+@api.route('/private', methods=['GET'])
 @jwt_required()
 def private():
-    user_id=get_jwt_identity()
-    user = User.query.get(user_id)
-    if user is None:
-        return False ,404
-    return jsonify(user.serialize()), 200
-
+    try: 
+        user_id=get_jwt_identity()
+        print(user_id)
+    # user = User.query.get(user_id)
+    # print(user_id)
+    # if user is None:
+    #     return False ,404
+    # return jsonify(user.serialize()), 200
+        return jsonify("hola")
+    except:
+        return jsonify("error")
+    
 
 @api.route('/user/<int:user_id>', methods=['GET'])
 def get_one_user(user_id):

@@ -57,13 +57,13 @@ export const Home = () => {
 
 				<div className="left">
 
-					<h2><i className="fa-solid fa-earth-americas fa-xl mt-5 mx-3" style={{ color: "#6fe1cb" }}></i></h2>
+					
 
 					<div className="body-l">
 
 						<h3 className="title-l fw-bold"> PROYECTO DE AUTENTICACIÓN DE JWT </h3>
 
-						<img src="https://img.freepik.com/free-vector/abstract-pink-cube-background_1394-899.jpg?t=st=1737678278~exp=1737681878~hmac=838df93faf47598930d0af07134971b895c3e60c453e03bee8b790d28f191b4d&w=826" alt="rochet img" />
+						<img src="https://img.freepik.com/free-vector/abstract-pink-cube-background_1394-899.jpg?t=st=1738015671~exp=1738019271~hmac=dbfc1fb8fd5622d68a3ca0434ed01317e4a504874f44e4c63742e68db1ead200&w=826" alt="rochet img" />
 
 					</div>
 
